@@ -1,0 +1,11 @@
+std_msgs/Header header
+bool takeover_required
+bool obstacle_in_path
+bool lane_blocked
+bool trajectory_feasible
+float32 hazard_distance_m
+float32 hazard_ttc_s
+float32 takeover_deadline_s
+string reason_code
+string risk_level
+string fallback_strategy

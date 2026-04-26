@@ -1,0 +1,37 @@
+l3_supervisor:
+  ros__parameters:
+    use_sim_time: false
+    role_name: ego_vehicle
+    publish_rate_hz: 10.0
+    driver_timeout_sec: 2.5
+    carla_timeout_sec: 3.0
+    scenario_timeout_sec: 3.0
+    driver_ready_hold_sec: 2.0
+    driver_unready_grace_sec: 2.0
+    scenario_td_hold_sec: 0.5
+    tor_timeout_sec: 4.0
+    takeover_steer_threshold: 0.05
+    takeover_pedal_threshold: 0.05
+    manual_cmd_timeout_sec: 1.0
+    takeover_event_hold_sec: 1.0
+    min_l3_speed_mps: 0.0
+    standstill_speed_threshold_mps: 0.2
+    mrm_brake: 0.35
+    mrm_throttle: 0.0
+    mrm_steer: 0.0
+    mrm_hand_brake_at_standstill: true
+    mrm_force_control_mode: false
+    active_uses_autoware: false
+    tor_keeps_autoware: false
+    autoware_backend: auto
+    autoware_engage_topic: /autoware/engage
+    autoware_operation_mode_state_topic: /api/operation_mode/state
+    autoware_change_to_autonomous_service: /api/operation_mode/change_to_autonomous
+    autoware_change_to_stop_service: /api/operation_mode/change_to_stop
+    autoware_enable_control_service: /api/operation_mode/enable_autoware_control
+    autoware_disable_control_service: /api/operation_mode/disable_autoware_control
+    require_automation_request: false
+    require_driver_monitoring: false
+    auto_engage: true
+    auto_activate_on_request: true
+    default_system_available: true

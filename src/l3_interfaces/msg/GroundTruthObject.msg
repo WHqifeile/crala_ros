@@ -1,0 +1,10 @@
+int32 id
+string role_name
+string object_type
+float32 x
+float32 y
+float32 yaw_deg
+float32 speed_mps
+float32 bbox_x
+float32 bbox_y
+float32 bbox_z
